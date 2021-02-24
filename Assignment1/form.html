@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-image: url("school3.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+            font-family: 'Roboto', sans-serif;
+        }
+        .form{
+            margin: auto;
+            width: 60%;
+            padding: 30px;
+            color: white;           
+          
+            
+        }
+        input[type=text],input[type=date],input[type=email],input[type=tel]{
+            border-radius: 10px;
+            padding: 4px;
+        }
+        fieldset{
+            border-radius: 10px;
+
+        }
+        
+        legend{
+            margin: 0 auto;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <fieldset style="padding:20px;">
+            <legend><b>Admission Form</b></legend>
+            <form action="mailto:karindranil999@gmail.com" method="POST" enctype="text/plain">
+                <fieldset>
+                    <legend><b>Personal Information</b></legend>
+                    <label for="First Name"><b>First Name: &nbsp;</b></label>
+                    <input type="text" name="First name" placeholder="Your First Name">
+                    
+                    <label for="Last Name"><b> &nbsp; Last Name: &nbsp;</b></label>
+                    <input type="text" name="Last name" placeholder="Your Last Name">
+                    <br>
+                    <br>
+                    <label for="Gender "><strong>Gender : &nbsp;</strong> </label>
+                    <label for="Male">Male</label>
+                    <input type="radio" name="Gender" id="Male" value="Male">
+                    <label for="Female">Female</label>
+                    <input type="radio" name="Gender" id="Male" value="Male">
+                    <br><br>
+                    <label for="Date Of Birth"><b> Date Of Birth : </b></label>
+                    <input type="date" name="Date" id="date">
+                    <br><br>
+                    <label for="Email "><b>Email : &nbsp;</b></label>
+                    <input type="email" name="Mail Id " id="phone" placeholder="example@something.com">
+                    <br><br>
+                    <label for="Phone Number "><b>Phone Number :</b></label>
+                    <input type="tel" name="Phone" id="phone" placeholder="91-1234567890" pattern="[0-9]{2}-[0-9]{10}" >
+                    <br><br>
+                    <label for="Height "><b>Height &nbsp;</b></label>
+                    <input type="text" name="Height " id="height" placeholder="Height in Meters">
+                    <br><br>
+                </fieldset>
+                <br><br>
+                <fieldset>
+                    <legend><b>Education </b></legend>
+                    <label for="School Name"><b>School Name : &nbsp;</b></label>
+                    <input type="text" name="School Name " placeholder="School Name">
+                    <br><br>
+                    <label for="Class Namr" ><b>Class Name : &nbsp;</b></label>
+                    <input type="text" name="Class Name" placeholder="Class Name">
+                    <br><br>
+                    <label for="Stream "><b>Stream : &nbsp;</b></label>
+                    <select name="Stream" id="stream" default>
+                        <option value="Science ">Science</option>
+                        <option value="Humanities " default>Humanities</option>
+                        <option value="Commerce ">Commerce </option>
+                    </select>
+                    <br><br>
+                    <label for="Marksheet "><b>Marksheet : &nbsp;</b></label>
+                    <input type="file" name="Marksheet" id="marksheet">
+                </fieldset>
+                <br>
+                <center><input type="submit" value="Submit">&nbsp; <input type="reset" value="Reset"></center>
+            </form>
+        </fieldset>
+    
+    </div>
+
+</body>
+</html>
