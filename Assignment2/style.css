@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(233, 6, 114);
+  background: linear-gradient(
+    90deg,
+    rgba(233, 6, 114, 1) 0%,
+    rgba(227, 112, 143, 1) 52%,
+    rgba(232, 149, 149, 1) 100%
+  );
+  color: white;
+}
+main {
+  margin: auto;
+  width: 70%;
+}
+main > h1 {
+  position: sticky;
+  top: 5px;
+  background-color: #df2371;
+  padding: 5px;
+  text-align: center;
+  border: 2px solid #800638;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  z-index: 1;
+}
+
+.heading {
+  position: sticky;
+  top: 70px;
+  background-color: #df2371;
+  text-align: center;
+  color: #ffffff;
+  border: 2px solid #6b052f;
+  margin: 10px auto;
+  border-radius: 50px;
+  font-size: 1.2rem;
+}
+
+.contacts {
+  padding: 30px;
+}
+.items {
+  margin: 10px auto;
+  padding: 20px;
+  border: 2px solid rgb(75, 10, 10);
+  border-radius: 20px;
+}
+.items > i {
+  margin: auto 5px;
+}
