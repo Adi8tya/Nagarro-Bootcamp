@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+}
+button{
+    margin-top: 50vh;
+    padding: 10px;
+    transform: scale(1.4);
+    color: rgb(152, 209, 152);
+    background-color: transparent;
+    border: 2px solid rgb(35, 240, 35);
+    border-radius: 5px;
+    transition: all 0.45s ease-in-out;
+    outline: none;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.4) translateY(-10px);
+    border:2px solid rgb(217, 240, 14);
+    color: rgb(235, 231, 39);
+    box-shadow: 0px 3px 4px rgb(235, 231, 39) ;
+}
