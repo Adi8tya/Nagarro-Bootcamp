@@ -30,12 +30,12 @@ Landing Page - A responsive landing page with animations and added responsivenes
 
 ## Landing Page Screenshots
 
-![Landing-page1](Assigment4/landing1.jpg)
+![landing1](Assignment4/Images/landing1.jpg)
 
-![Landing-page2](Assignment4/landing2.jpg)
+![Landing-page2](Assignment4/Images/landing2.jpg)
 
-![Landing-page2](Assignment4/landing3.jpg)
+![Landing-page3](Assignment4/Images/landing3.jpg)
 
-![Landing-page2](Assignment4/landing4.jpg)
+![Landing-page4](Assignment4/Images/landing4.jpg)
 
-![Landing-page2](Assignment4/landing5.jpg)
+![Landing-page5](Assignment4/Images/landing5.jpg)
