@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Cabin", sans-serif;
+}
+nav {
+  padding: 40px;
+  background-color: rgb(76, 83, 112);
+  perspective: 700px;
+  position: fixed;
+  width: 100%;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  position: absolute;
+  right: 50px;
+  color: rgb(255, 255, 255);
+
+  transform: translateY(-50%);
+}
+li {
+  padding: 10px;
+
+  font-weight: 600;
+  cursor: pointer;
+}
+li:hover {
+  transform: scale(1.2);
+}
+#slideshow {
+  width: 100%;
+  height: 70vh;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: gallery 25s linear infinite normal;
+
+  /* animation: gallery 10s infinite; */
+}
+
+@keyframes gallery {
+  0% {
+    background-image: url("Images/img1.jpg");
+  }
+  25% {
+    background-image: url("Images/img3.jpg");
+  }
+  50% {
+    background-image: url("Images/img4.jpg");
+  }
+
+  75% {
+    background-image: url("Images/iphone.jpg");
+  }
+
+  100% {
+    background-image: url("Images/img5.jpg");
+  }
+}
+
+#offer {
+  background-color: #435560;
+  text-align: center;
+}
+#offer > div {
+  background-color: #879197;
+  padding: 20px;
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+}
+
+#cards {
+  background-color: #435560;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.card {
+  width: 300px;
+  height: 350px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  margin: 40px;
+  perspective: 800px;
+  box-shadow: 7px 7px 5px rgb(83, 79, 79);
+  transition: transform 1s;
+  cursor: pointer;
+}
+.card-img img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.card-content {
+  padding-top: 20px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding: 30px;
+}
+.contents {
+  margin: auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+.contents > h3 {
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  ul {
+    position: relative;
+    left: 0px;
+    top: 30px;
+    margin: auto;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  nav > .item {
+    font-size: 1.2px;
+  }
+}
