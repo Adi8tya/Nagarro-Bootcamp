@@ -24,3 +24,18 @@ Hover Me Button - Translates in y direction , and applies a Shadow
 
 ## Hover Me
 ![Hover-Me](Assignment3/hover.jpg)
+
+# Assignment 4
+Landing Page - A responsive landing page with animations and added responsiveness using CSS Grids and Flexbox
+
+## Landing Page Screenshots
+
+![Landing-page1](Assigment4/landing1.jpg)
+
+![Landing-page2](Assignment4/landing2.jpg)
+
+![Landing-page2](Assignment4/landing3.jpg)
+
+![Landing-page2](Assignment4/landing4.jpg)
+
+![Landing-page2](Assignment4/landing5.jpg)
