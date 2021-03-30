@@ -1,0 +1,337 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&family=Hind&family=Josefin+Sans&family=Noto+Sans&family=Noto+Serif&family=Roboto&family=Rubik&family=Ubuntu&display=swap');
+
+html{
+  scrollbar-width: thin;
+  scrollbar-color: rgb(139, 138, 138) #15131b ;
+  --baloo: 'Baloo Chettan 2', cursive;
+  --hind: 'Hind', sans-serif;
+--josefin: 'Josefin Sans', sans-serif;
+--notosans: 'Noto Sans', sans-serif;
+--notoserif: 'Noto Serif', serif;
+--roboto: 'Roboto', sans-serif;
+--rubik: 'Rubik', sans-serif;
+--ubuntu: 'Ubuntu', sans-serif;
+
+}
+*{
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(167, 165, 165);
+  box-shadow: inset 0 0 5px grey;
+}
+::-webkit-scrollbar-thumb {
+  background: #15131b;
+
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(7, 7, 7);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+
+}
+.topButton{
+  position: fixed;
+  background-color: #50cee7;
+  color: #fff;
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  z-index: 10;
+  border-radius:120px;
+  padding: 5px;
+  font-size: 1.3rem;
+}
+.topButton a{
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+
+}
+h1{
+  font-family: var(--notosans);
+  font-size: 2.5rem;
+  color: white;
+}
+nav {
+  opacity: transparent;
+  text-decoration: none;
+  background-color: #100e17;  
+}
+
+nav a {
+  color: white;
+  font-family: var(--baloo);
+  font-size: 1.4rem;
+
+}
+nav a:hover{
+  color: #8eecff;
+}
+
+#home {
+  height: 85vh;
+  background-image: url("Images/dp2.jpg");
+  background-position:top 10px  center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 3;
+  width: 100%;
+}
+#home::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: rgb(15,15,15);
+  background: -moz-linear-gradient(90deg, rgba(15,15,15,1) 51%, rgba(144,144,144,1) 100%, rgba(224,217,217,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(15,15,15,1) 51%, rgba(144,144,144,1) 100%, rgba(224,217,217,1) 100%);
+  background: linear-gradient(90deg, rgba(15,15,15,1) 51%, rgba(144,144,144,1) 100%, rgba(224,217,217,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f0f0f",endColorstr="#e0d9d9",GradientType=1);
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.shortintro{
+  margin-left: 70px;
+  color:white;
+  font-family: 'Hind', sans-serif;
+  font-size: 2rem;
+  z-index: 5;
+
+}
+.shortintro h1{
+  font-size: 3.2rem;
+}
+.shortintro a{
+  color: white;
+  outline: none;
+}
+.shortintro a:hover{
+  color: #8eecff;
+}
+#about-me{
+  background-color: #100e17;
+  color: white;
+  width: 100%;
+}
+.text p{
+  font-size: 1.2rem;
+line-height: 2;
+padding: 20px;
+font-weight: 600;
+font-family: var(--hind);
+}
+#skills{
+
+  background-color: #272729;
+  color: #8ac4d0;
+  font-family: var(--rubik);
+
+}
+/* .images col{
+  border: 2px soli white;
+  box-shadow: 0px 0px 10px 2px white;
+
+} */
+
+/* .btn{
+  background-color: transparent;
+  border: 1px solid #8eecff;
+  color: #8eecff;
+} */
+
+.images .col{
+  transition: all 1s;
+} 
+.images .col:hover{
+transform: translateY(-20px);
+}
+.btn-primary{
+  background-color: transparent;
+  border: 1px solid #8eecff;
+  color: #8eecff;
+}
+.btn-primary:hover{
+  background-color: #1087a1;
+  color: white
+}
+.btn-primary:active{
+  background-color: transparent;
+  color:#8eecff;
+}
+.card{
+  background-color:#100e17 ;
+  color:white;
+  border-radius: 20px;
+  transition: all 1s ease-out;
+}
+
+.card h5{
+  font-weight: 500;
+  font-family: var(--ubuntu);
+}
+.card p{
+  font-family: var(--hind) ;
+}
+.card-img{
+  border-radius: 20px 20px 0 0;
+}
+.modal-title{
+  color:#8eecff
+}
+.modal-content{
+background-color: #272729;
+}
+.modal-body p{
+  font-family: var(--hind);
+}
+.close {
+  color: #fff;
+  opacity: 1;
+}
+#portfolio{
+
+  background-image: url("Images/projects.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 3;
+  width: 100%;
+
+
+}
+
+#portfolio ::after{
+  content: "";
+  height: 100%;
+  width: 100%;
+background-color: #15131b;
+  opacity: 0.15;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.project{
+  padding: 10px;
+}
+.project .card{
+  width:18rem;
+  border:2px solid #8eecff;
+ box-shadow: 0px 4px 10px black;
+
+}
+#ContactMe{
+  color: White;
+  background-image: url("Images/contact-us-2993000_1920.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+
+}
+#ContactMe::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+.info-container{
+  width: 75%;
+}
+.info{
+    background-color: #272729;
+    border: 2px solid #8eecff;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0px 10px 5px black;
+}
+
+.info-text h4{
+color: #8eecff;
+}
+.info-text p,.info-text a{
+  text-decoration: none;
+color: white;
+}
+.info .fas{
+  color:#8eecff ;
+  font-size: 1.5rem;
+  border: 2px solid #8eecff ;
+  padding: 38px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.form-group input ,#exampleFormControlTextarea1{
+border: 4px solid #8eecff ;
+}
+.mediaicons a{
+  padding: 10px;
+  font-style: none;
+  font-size: 2rem;
+  color: white;
+}
+.mediaicons a:hover{
+  color: #8eecff ;
+}
+footer{
+  padding: 3px;
+  background-color: #272729;
+  color: white;
+  
+}
+@media screen and (max-width:700px){
+    .shortintro{
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+    .text p{
+      line-height: 1.3;
+      padding-left: 30px;
+    }
+    .project .card{
+      width: 20rem;
+    }
+    .info-container{
+      width:100%;
+      font-size: 0.8rem;
+      transform: scale(0.9);
+    }
+}
+@media screen and (max-width:366px){
+  .info-container{
+    width:100%;
+    font-size: 0.5rem;
+    transform: scale(0.75);
+  }
+   .project .card{
+    width: 15rem;
+
+  }
+}
