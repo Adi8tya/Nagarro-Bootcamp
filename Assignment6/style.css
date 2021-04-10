@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #242B2E;
+    color: white;
+}
+.main{
+    width: 50%;
+}
+.list-group-item{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+}
+.icon-set{
+    position: absolute;
+    right: 10px;
+    color: aqua;
+}
+.mainlynone{
+    text-align: center;
+}
+.hidden{
+    display:none;
+}
+.icon{
+    color: rgb(15, 32, 32);
+    font-size: 25px;
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.form-control{
+border-radius: 10px;
+border: 2px solid black;
+}
+p{
+    font-size: 1.3rem;
+}
+
+@media screen  and (max-width : 650px){
+    .main{
+        width: 85%;
+    }
+}
