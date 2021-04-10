@@ -43,8 +43,15 @@ Landing Page - A responsive landing page with animations and added responsivenes
 # Assignment 5
 Portfolio - It is a personal portfolio project site using Html, Bootstrap Css.
 
+Hosted at - www.indranilkar.ml
 ## Portfolio Screenshots
 
-![screenshots1][Assignment5/Images/screenshots1.jpg]
+![screenshots1](Assignment5/Images/screenshots1.jpg)
 
-![screenshots2][Assignment5/Images/screenshots2.jpg]
+![screenshots2](Assignment5/Images/screenshots2.jpg)
+
+# Assignment 6
+
+Todo List - It is a simple todo list app that where we can add, delete, edit.
+
+![screenshots1](Assignment6/Images/Todo.png)
