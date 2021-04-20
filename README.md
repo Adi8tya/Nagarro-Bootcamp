@@ -55,3 +55,11 @@ Hosted at - www.indranilkar.ml
 Todo List - It is a simple todo list app that where we can add, delete, edit.
 
 ![screenshots1](Assignment6/Images/Todo.png)
+
+# Assignment 7
+
+Weather App - It is a web app which uses weather api to display the weather of a place. We can search for any place for which we want to see the weather. It also displays a preloader until it loads and When the browser loads up , it fetches the location of the user's device.
+
+Screenshots
+
+![screenshots1](Assignment7/Images/weather.png)
