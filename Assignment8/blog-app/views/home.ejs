@@ -1,0 +1,120 @@
+<%- include("partials/header") %> 
+<title>Home</title>
+</head>
+<body style="background-color: #f0f5f1;">
+<%- include("partials/navbar") %>
+<div class="container mt-4">
+    <h1 class="text-center">Welcome to My Blog</h1>
+    <hr>
+    <div class="categoryWise my-2">
+         <% if(dataobj.length<1){%>
+            <div class="empty text-center"><h1>No blogs written, Tap on New to Create One!</h1></div>
+         <%}
+         
+         const technology=dataobj.filter((blogObj)=>{
+             return blogObj.category=="Technology"
+         })
+         const sports=dataobj.filter((blogObj)=>{
+             return blogObj.category=="Sports"
+         })
+         const healthAndMed=dataobj.filter((blogObj)=>{
+             return blogObj.category=="Health And Medicine"
+         })
+        
+        if(technology.length>0){%>
+         <div class="category-component my-2">
+                <h2 class="my-2"> Technology  </h3>
+                <hr>
+            
+                <div class="owl-carousel owl-theme">
+                    <%for(index of technology.reverse()){%>
+                <div class="card item" style="height:25rem;width: 20rem;">
+        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+    <img
+      src="<%= index.img %>"
+      class="img-fluid"
+    />
+    <a href="#!">
+      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+    </a>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"><%= index.title %></h5>
+    <p class="card-text">
+      <%= index.desc.slice(0,90) %>...
+    </p>
+    <a href="/blogs/<%= index._id %>" class="btn btn-primary">View More</a>
+  </div>
+                </div>
+                <%}%>
+</div>
+        
+         
+         </div>
+         <%}
+         if(sports.length>0){%>
+         <div class="category-component my-2">
+                <h2 class="my-2"> Sports  </h3>
+                <hr>
+            
+                <div class="owl-carousel owl-theme">
+                    <%for(index of sports.reverse()){%>
+                <div class="card item" style="height:25rem;width: 20rem;">
+        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+    <img
+      src="<%= index.img %>"
+      class="img-fluid"
+    />
+    <a href="#!">
+      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+    </a>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"><%= index.title %></h5>
+    <p class="card-text">
+      <%= index.desc.slice(0,90) %>...
+    </p>
+    <a href="/blogs/<%= index._id %>" class="btn btn-primary">View More</a>
+  </div>
+                </div>
+                <%}%>
+</div>
+        
+         
+         </div>
+         <%}
+         if(healthAndMed.length>0){%>
+         <div class="category-component my-2">
+                <h2 class="my-2"> Health And Medicine  </h3>
+                <hr>
+            
+                <div class="owl-carousel owl-theme">
+                    <%for(index of healthAndMed.reverse()){%>
+                <div class="card item" style="height:25rem;width: 20rem;">
+        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+    <img
+      src="<%= index.img %>"
+      class="img-fluid"
+    />
+    <a href="#!">
+      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+    </a>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"><%= index.title %></h5>
+    <p class="card-text">
+      <%= index.desc.slice(0,90) %>...
+    </p>
+    <a href="/blogs/<%= index._id %>" class="btn btn-primary">View More</a>
+  </div>
+                </div>
+                <%}%>
+</div>
+        
+         
+         </div>
+         <%}%>
+</div>
+
+ 
+<%- include("partials/footer") %> 

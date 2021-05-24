@@ -1,0 +1,100 @@
+
+<%- include("partials/header") %> 
+<title><%= data.title %> </title>
+</head>
+<body style="background-color: #f0f5f1;">
+<%- include("partials/navbar") %>
+<div class="container mr-2">
+    <h2 class="text-center">Your Blog</h2>
+    <div class="blog-comment row">
+        <div class="blog-cont col-md-7">
+            <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img
+                    src="<%=data.img%>"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <% if(data.date){ console.log(data.date) %> 
+                    <i>Created on <%=String(data.date).slice(0,10)%></i>
+                    <%}%>
+                  <h3 class="card-title "><%= data.title %></h3>
+              
+                  <p class="card-text">
+                    <%=data.desc%>
+                  </p>
+                  <br>
+                  <i>Category : <%=data.category%></i>
+                  <br>
+                  <div class="all-buttons d-flex mt-2">
+                    <a href="/blogs/<%= data._id %>/edit" class="btn btn-primary">Edit</a>
+                    <form action="/blogs/<%=data._id%>/delete?_method=DELETE" method="post">
+                    <button type="submit" id="deletebtn" class="btn btn-danger mx-2">Delete</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="comment-cont col-md p-3">
+          <h2 class="comments my-2">Add a comment</h2>
+          <hr>
+          <div class="comment-form my-2">
+            <form action="/blogs/<%=data._id%>/comments" method="post">
+              
+              <div class="form-outline mb-4">
+                <input type="text" id="title" class="form-control" name="title"/>
+                <label class="form-label" for="form1Example1">Write a Title...</label>
+              </div>
+            
+            
+              <div class="form-outline mb-4">
+                <textarea class="form-control" id="desd" rows="4" name="desc"></textarea>
+                <label class="form-label" for="textAreaExample">Write your Comment...</label>
+              </div>
+            
+              <div class="button-flex d-flex">
+                <button type="submit" class="btn btn-primary mx-2">Save</button>
+                <button type="reset" class="btn btn-primary mx-2">Reset</button>
+              </div>
+            </form>
+          </div>
+          
+          <h2 class="show mt-4">Comments...</h2>
+          <hr>
+          <div class="comment-show my-2">
+            <% if(data.comments.length>0){ 
+              for(index of data.comments.reverse()){%>
+                <div class="card my-4" style="width:25rem;">
+                  <div class="card-body">
+                   <h5 class="card-title"><%=index.title%></h5>
+                     <p class="card-text">
+                      <%=index.desc%>
+                      </p>  
+                      <i class="card-subtitle mb-2 text-muted">Posted on <%=String(index.date).slice(0,10)%></i>  
+                  </div>
+                </div>
+              <%}
+            }
+            else{%>
+              <h5 class="text-center">No Comments Yet..!</h5>
+            <%}%>
+          </div>
+        </div>
+        
+    </div>
+</div>
+<script>
+ 
+document.querySelector("#deletebtn").addEventListener("click", (e)=>{
+  let con=confirm("Are you sure you want to Delete?")
+  if(con==false){
+  e.preventDefault();
+  }
+
+})
+</script>
+<%- include("partials/footer") %> 

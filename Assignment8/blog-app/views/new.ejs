@@ -1,0 +1,68 @@
+<%- include("partials/header") %>
+<title>Create a new blog.</title>
+</head>
+<body >
+<%- include("partials/navbar") %>  
+<div class="new-blog container mt-4">
+<h2 class="text-center my-2">Create a new Blog !</h2>
+<hr>
+<form action="/blogs/new" method="POST" class="needs-validation" novalidate>
+    <div class="form-outline mb-5">
+        <input type="text" id="title" class="form-control" name="title" required/>
+        <label class="form-label" for="name">Blog Title</label>
+        <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback">Not a suitable Title</div>
+      </div>
+      
+      <div class="form-outline mb-5">
+        <input type="text" id="img" class="form-control" name="img" required/>
+        <label class="form-label" for="img">Give and Image</label>
+        <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback">Not a valid image link!</div>
+      </div>
+      <div class="form-outline mb-5">
+        <textarea class="form-control" id="desc" rows="4" name="desc" required></textarea>
+        <label class="form-label" for="desc">Write your blog!</label>
+        <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback">Not a proper description</div>
+      </div>
+      <div class="form-outline mb-5">
+        <select class="form-select" name="category" required>
+          <option value="">Choose a category</option>
+          <option value="Technology">Technology</option>
+          <option value="Sports">Sports</option>
+          <option value="Health And Medicine">Health And Medicine</option>
+          
+        </select>
+        <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback">Give a category selection</div>
+      </div>
+      <div class="btn-container d-flex flex-column w-25 justify-center m-auto">
+        <button type="submit" class="btn btn-primary mb-4">Save</button>
+        <button type="reset" class="btn btn-primary mb-4">Reset</button>
+      </div>
+
+</form>
+</div>
+
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict';
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation');
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms).forEach((form) => {
+    form.addEventListener('submit', (event) => {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    }, false);
+  });
+})();
+</script>
+<%- include("partials/footer") %> 
