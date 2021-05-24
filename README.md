@@ -63,3 +63,54 @@ Weather App - It is a web app which uses weather api to display the weather of a
 Screenshots
 
 ![screenshots1](Assignment7/Images/weather.png)
+
+# Assignment 8
+Blog App - It is a blog application which has all the blogs in categorical format, and we can perform all the 
+basic CRUD operations over there.
+
+## To use - 
+* Install NodeJs
+* Install mongodb
+* Clone the Repo
+* Open terminal and write 
+ ```node
+npm install
+```
+ And then write in the terminal..
+
+ ```node
+ npm start
+ ```
+ Go to the browser and type<br>
+
+ This is the root route...
+
+ > localhost:3000.<br/>
+
+To display the blogs go to...
+
+ >localhost:3000/blogs
+
+<br>
+
+> There is a seed.js file .To seed  default data into database. Remove the comment of seed() in the index.js file and run the server.
+ # Screenshots of the Project
+## Blog Home Page- <br/>
+
+ ![screenshots1](Assignment8/blog-app/public/Images/blog1.png)
+
+ ## Individual Page <br/>
+
+ ![screenshots1](Assignment8/blog-app/public/Images/blog2.png)
+
+ ## Comment Page <br/>
+
+ ![screenshots1](Assignment8/blog-app/public/Images/blog5.png)
+
+ ## New Page <br/>
+
+ ![screenshots1](Assignment8/blog-app/public/Images/blog3.png)
+
+ ## Edit Page <br/>
+ 
+ ![screenshots1](Assignment8/blog-app/public/Images/blog4.png)
